@@ -22,8 +22,8 @@ namespace SciPlay_Test
 
         string MakePerson()
             {
-                int birthYear = random.Next(minYear, maxYear);
-            int deathYear = random.Next(birthYear, maxYear);
+                int birthYear = random.Next(minYear, maxYear + 1);
+                int deathYear = random.Next(birthYear, maxYear + 1);
 
                 String person = firstNameArray[random.Next(0, firstNameArray.Length)] + " " +
                     lastNameArray[random.Next(0, lastNameArray.Length)] + " " +
